@@ -1,0 +1,5 @@
+
+ssh www.mif.vu.lt -l username 
+psql -h pgsql2.mif biblio
+
+

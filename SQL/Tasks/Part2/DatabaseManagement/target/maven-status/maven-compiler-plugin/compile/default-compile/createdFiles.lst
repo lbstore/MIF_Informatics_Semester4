@@ -1,0 +1,11 @@
+com\databasemanagement\ViewManager$1.class
+com\databasemanagement\BaseController.class
+com\databasemanagement\AdminWindowController.class
+com\databasemanagement\MainApp.class
+com\databasemanagement\sqlParsing\tableTypes\CreateTables.class
+com\databasemanagement\sqlParsing\Commander.class
+com\databasemanagement\ViewManager.class
+com\databasemanagement\WorkerController.class
+com\databasemanagement\Frame.class
+com\databasemanagement\FXMLController.class
+com\databasemanagement\TableWindowController.class

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.72" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.FXMLController">
+   <center>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="list" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="server" text="irc.freenode.net">
+               <tooltip>
+                  <Tooltip text="Server" />
+               </tooltip></TextField>
+            <TextField fx:id="nick" text="sampleNick">
+               <tooltip>
+                  <Tooltip text="Login/Nickname" />
+               </tooltip></TextField>
+            <TextField fx:id="channel" text="irchacks">
+               <tooltip>
+                  <Tooltip text="Channel" />
+               </tooltip></TextField>
+            <Button mnemonicParsing="false" onAction="#connect" text="Connect" />
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <TextField fx:id="message" onAction="#writeMsg" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
